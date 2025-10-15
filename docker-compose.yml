@@ -1,0 +1,9 @@
+services:
+  staskode-dashboard:
+    build: 
+      context: .
+      args:
+        - VITE_API_BASE_URL=https://test-app-csm.up.railway.app
+    ports:
+      - "5173:80"
+
